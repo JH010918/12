@@ -145,7 +145,7 @@
     return 0;
 }*/
 
-int main(void)
+/*int main(void)
 {
     int age;
     double height;
@@ -155,4 +155,5 @@ int main(void)
     printf("나이 : %d살, 키 : %.1lfcm.\n", age, height);
 
     return 0;
-}
+}*/
+
