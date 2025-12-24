@@ -151,9 +151,155 @@
     double height;
 
     printf("나이와 키를 입력하세요 : ");
-    scanf("%d%lf",&age,&height);
+    scanf("%d %lf",&age,&height);
     printf("나이 : %d살, 키 : %.1lfcm.\n", age, height);
 
     return 0;
 }*/
 
+/*int main(void)
+{
+    char grade;
+    char name[20];
+
+    printf("학점 입력 : ");
+    scanf("%c",&grade);
+    printf("이름 입력 : ");
+    scanf("%s",name);   //문자열은 scanf할 때 & 필요없음
+    printf("%s의 학점은 %c입니다.\n",name, grade);
+
+    return 0;
+}*/
+
+/*int main(void)
+{
+    int a,b;
+    int sum, sub, mul, inv;
+
+    a=10, b=20;
+    sum = a+b;
+    sub=a-b;
+    mul=a*b;
+    inv=-a;
+
+    return 0;
+}*/
+
+/*int main(void)
+{
+    double apple;
+    int banana;
+    int orange;
+
+    apple = 5.0/2.0;
+    banana=5/2; //몫
+    orange=5%2; //나머지
+
+    printf("%.1lf\n",apple);
+    printf("%d\n",banana);
+    printf("%d\n",orange);
+
+    return 0;
+}*/
+
+/*int main(void)
+{
+    int a=10,b=10;
+
+    ++a;
+    --b;
+
+    printf("a : %d\n",a);
+    printf("b : %d\n",b);
+
+    return 0;
+}*/
+
+/*int main(void)
+{
+    int a=5,b=5;
+    int pre,post;
+
+    pre=(++a)*3;
+    post=(b++)*3;
+    printf("a=%d, b=%d\n",a,b);
+    printf("(++a)*3=%d, (b++)*3=%d\n",pre,post);
+
+    return 0;
+}*/
+
+/*int main(void)
+{
+    int a=10,b=20,c=10;
+    int res;
+
+    res=(a>b);
+    printf("a>b : %d\n",res);
+    res=(a>=b);
+    printf("a>=b : %d\n",res);
+    res=(a<b);
+    printf("a<b : %d\n'", res);
+    res=(a<=b);
+    printf("a<=b : %d\n",res);
+    res=(a==b);
+    printf("a==b : %d\n",res);
+    res=(a!=c);
+    printf("a!=c : %d\n",res);
+
+    return 0;
+}*/
+
+/*int main(void)
+{
+    int a=30;
+    int res;
+
+    res=(a>10)&&(a<20); //&&=and
+    printf("%d\n",res);
+    res=(a<10)||(a>20); //||=or
+    printf("%d\n",res);
+    res=!(a>=30);       //!=not
+    printf("%d\n",res);
+
+    return 0;
+}*/
+
+/*int main(void)
+{
+    int a=10,b=20,res;
+
+    a+b;
+    printf("%d+%d=%d\n",a,b,a+b);
+
+    res=a+b;
+    printf("%d+%d=%d\n",a,b,res);
+
+    return 0;
+}*/
+
+/*int main(void)
+{
+    int a=20, b=3;
+    double res;
+
+    res = ((double)a)/((double)b);
+    printf("a=%d,b=%d\n",a,b);
+    printf("a/b = %.10lf\n",res);
+
+    a= (int)res;
+    printf("(int) %.1lf = %d\n",res,a);
+
+    return 0;
+}*/
+
+int main(void)
+{
+    double a,b,c;
+    double res;
+
+    a=1.1,b=2.2;
+    res= a+b;
+    c=(res==3.3);
+    printf("%lf\n",res);
+    printf("c==3.3\n",c);
+}
