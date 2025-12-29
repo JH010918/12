@@ -172,7 +172,11 @@ int main(void){
     printf("cos(x)   = %.4f\n",cos(x));
     printf("log(x)   = %.4f\n",log(x));
     printf("fabs(x)  = %.4f\n",fabs(x));
+<<<<<<< HEAD
     
+=======
+    printf*"ebd"
+>>>>>>> 24b5c7646c5a9b4bd604f4fba9220b79a38809bb
 
     return 0;
 }
