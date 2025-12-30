@@ -325,6 +325,6 @@ int main(void){
     for(i=0;i<10;i++){
     printf("%d, ",ary[i]);
     }
-    printf("\n");
+    printf("?\n");
     return 0;
 }
