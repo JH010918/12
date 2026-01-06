@@ -179,6 +179,112 @@ void my_gets(char *str,int size){
 //     return 0;
 // }
 
+//int main(){
+//     printf("grape start : %p\n","grape");
+//     printf("2nd : %p\n","grape"+1);
+//     printf("1st char : %c\n",*"grape");
+//     printf("2nd char : %c\n",*("grape"+1));
+//     printf("ary 3rd : %c\n","grape"[2]);
+
+//     return 0;
+// }
+
+// int main(){
+//     char *dessert="apple";
+
+//     printf("%s\n",dessert);
+//     dessert="banana";
+//     printf("%s\n",dessert);
+
+//     return 0;
+// }
+
+// int main(){
+//     char str[80];
+//     scanf("%s",str);
+//     printf("%s\n",str);
+//     scanf("%s",str);
+//     printf("%s\n",str);
+
+//     return 0;
+// }
+
+// int main(){
+//     char str[80];
+
+//     printf("enter : ");
+//     gets(str);
+//     printf("%s",str);
+//     printf("\n");
+//     printf("%d\n",str[0]);
+//     return 0;
+// }
+#include <string.h>
+
+// int main(){
+//     char str[9];
+
+//     printf("string : ");
+//     fgets(str,sizeof(str),stdin);
+//     str[strlen(str)-1]='\0';    //str 뒤에 자동으로 \n이 붙어서 이를 없애주기 위함
+//     printf("string : %s end\n",str);
+
+//     return 0;
+// }
+
+// int main(){
+//     int age;
+//     char name[20];
+
+//     printf("age : ");
+//     scanf("%d",&age);
+//     getchar();
+//     printf("name : ");
+//     //gets(name);
+//     fgets(name,sizeof(name),stdin);
+//     name[strlen(name)-1]='\0';
+//     printf("age : %d, name : %s\n",age,name);
+
+//     return 0;
+// }
+
+// int main(){
+//     char str[80]="apple juice";
+//     char *ps="banana";
+
+//     puts(str);
+//     fputs(ps,stdout);
+//     puts("milk");
+
+//     return 0;
+// }
+
+// int main(){
+//     char *pc="mango";
+//     int i;
+//     pc="banana";
+//     for(i=0;i<6;i++){
+//         printf("%c",pc[i]);
+//     }
+//     printf("\n");
+
+//     char str[80]="mango";
+//     str[0]='t';
+//     printf("%s\n",str);
+//     return 0;
+// }
+
 int main(){
-    
+    char ani[20];
+    char why[80];
+    printf("좋아하는 동물 : ");
+    scanf("%s",ani);
+    getchar();  //scanf 이후 버퍼에 \n이 남아있는데 이를 제거하기 위함
+    printf("이유 : ");
+    fgets(why,sizeof(why),stdin);
+    why[strlen(why)-1]='\0';
+    printf("%s is %s\n",ani,why);
+    //printf("%d",why[0]);
+    return 0;
 }
+
