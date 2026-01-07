@@ -169,6 +169,175 @@ int n_cmp(char str1[],char str2[],int n){
 //     a=20;
 // }
 
+void auto_func(){
+    auto int a=0;
+
+    a++;
+    printf("%d\n",a);
+}
+
+void static_func(){
+    static int a;
+
+    a++;
+    printf("%d\n",a);
+}
+
+// int main(){
+//     int i;
+
+//     printf("normal\n");
+//     for(i=0;i<3;i++){
+//         auto_func();
+//     }
+
+//     printf("stactic\n");
+//     for(i=0;i<3;i++){
+//         static_func();
+//     }
+
+//     return 0;
+// }
+
+// int main(){
+//     register int i;
+//     auto int sum=0;
+
+//     for(i=1;i<=10000;i++){
+//         sum+=1;
+//     }
+//     printf("%d\n",sum);
+
+//     return 0;
+// }
+
+int *sum(int a,int b);
+   
+// int main(){
+//     int *resp;
+
+//     resp=sum(10,20);
+//     printf("sum : %d/n",*resp);
+
+//     return 0;
+// }
+
+int *sum(int a,int b){
+    static int res;
+    res=a+b;
+    return &res;
+}
+
+// int main(){
+//     char animal[5][20];
+//     int i;
+//     int count;
+
+//     count=sizeof(animal)/sizeof(animal[0]);
+//     for(i=0;i<count;i++){
+//         scanf("%s",animal[i]);
+//     }
+//     for(i=0;i<count;i++){
+//         printf("%s, ",animal[i]);
+//     }
+
+//     return 0;
+// }
+
+// int main(){
+//     char animal[5][10]={
+//         {'d','o','g','\0'},
+//         {'t','i','g','e','r','\0'}
+//     };
+// }
+
+// int main(){
+//     int score[2][3][4]={
+//         {{72,80,95,60},{68,98,83,90},{75,72,84,90}},
+//         {{66,85,90,88},{95,92,88,95},{43,72,56,75}}
+//     };
+
+//     int i,j,k;
+
+//     for(i=0;i<2;i++){
+//         printf("class %d\n",i+1);
+//         for(j=0;j<3;j++){
+//             for(k=0;k<4;k++){
+//                 printf("%5d",score[i][j][k]);
+//             }
+//             printf("\n");
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+// int main(){
+//     int ary1[4]={1,2,3,4};
+//     int ary2[4]={11,12,13,14};
+//     int ary3[4]={21,22,23,24};
+//     int *pary[3]={ary1,ary2,ary3};
+//     int i,j;
+
+//     for(i=0;i<3;i++){
+//         for(j=0;j<4;j++){
+//             printf("%5d",pary[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+// int main(){
+//     int i,j;
+//     int ary[5][6]={
+//         { 1, 2, 3, 4, 5},
+//         { 6, 7, 8, 9,10},
+//         {11,12,13,14,15},
+//         {16,17,18,19,20}
+//     };
+
+//     for(i=0;i<4;i++){
+//         for(j=0;j<5;j++){
+//             ary[i][5]+=ary[i][j];
+//             ary[4][j]+=ary[i][j];
+//             ary[4][5]+=ary[i][j];
+//         }
+//     }
+    
+//     for(i=0;i<5;i++){
+//         for(j=0;j<6;j++){
+//             printf("%4d",ary[i][j]);
+//         }
+//         printf("\n");
+//     }
+    
+//     return 0;
+// }
+
+void swap_ptr(char **ppa,char **ppb);
+
+// int main(){
+//     char *pa="success";
+//     char *pb="failure";
+
+//     printf("pa -> %s, pb -> %s\n",pa,pb);
+//     swap_ptr(&pa,&pb);
+//     printf("pa -> %s, pb -> %s\n",pa,pb);
+
+//     return 0;
+// }
+
+void swap_ptr(char **ppa,char **ppb){
+    char *pt;
+
+    pt=*ppa;
+    *ppa=*ppb;
+    *ppb=pt;
+}
+
 int main(){
     
 }
