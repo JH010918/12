@@ -326,7 +326,6 @@ int main(){
 
     printf("linear speed : %.2lf m/s\n",rs.linear);
     printf("angular speed : %.2lf rad/s\n",rs.angular);
-    printf("HEllo");
 
     return 0;
 }
