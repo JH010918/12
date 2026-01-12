@@ -204,10 +204,7 @@
 
 int main(){
     int data_count,i;
-    int mode=1; //up : 1, down : 0
-    int count=1;
 
-    srand(time(NULL));
     printf("data 개수 : ");
     scanf("%d",&data_count);
 
@@ -226,7 +223,7 @@ int main(){
     }
 
     int data_min=dist[0];
-    int min_num;
+    int min_num=1;
 
     for(i=1;i<data_count;i++){
         if(dist[i]<=data_min){
@@ -235,9 +232,8 @@ int main(){
         }
     }
 
-    printf("min : %d deg %d\n",min_num,data_min);
+    printf("min : %d deg %d cm\n",min_num,data_min);
 
-    
     free(dist);
 
     return 0;   

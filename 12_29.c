@@ -173,6 +173,5 @@ int main(void){
     printf("log(x)   = %.4f\n",log(x));
     printf("fabs(x)  = %.4f\n",fabs(x));
     
-
     return 0;
 }
