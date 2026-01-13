@@ -302,4 +302,5 @@ int main(void)
     c=(res==3.3);
     printf("%lf\n",res);
     printf("c==3.3\n",c);
+    return 0;
 }
