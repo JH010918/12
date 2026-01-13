@@ -14,19 +14,19 @@ int main(){
     scanf("%d",&sel);
 
     if(sel==1){
-
+        printf("1");
     }
     else if(sel==2){
-
+        printf("1");
     }
     else if(sel==3){
-
+        printf("1");
     }
     else if(sel==4){
-
+        printf("1");
     }
     else if(sel==5){
-
+        printf("1");
     }
     else if(sel==0){
         printf("종료합니다.\n");
