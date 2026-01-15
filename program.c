@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 #define PI 3.1415926535897932
 
+void line();
 void wheel_vel();
 
 int main(){
@@ -41,8 +43,15 @@ int main(){
     return 0;
 }
 
+void line(){
+    int i;
+    for(i=0;i<=25;i++){
+        printf("=");
+    }
+    printf("\n");
+}
 void wheel_vel(){
-    printf("");
+    line();
     double r,W,err_l,err_r,L;
     printf("바퀴 반지름[m] : ");
     scanf("%lf",&r);
@@ -53,12 +62,17 @@ void wheel_vel(){
     printf("목표 주행 거리(m) : ");
     scanf("%lf",&L);
     if(r<=0||W<=0||err_l<0||err_r<0||err_l==err_r||L<=0) return;
+    line();
 
     double rad_l=r*(1+err_l/100),rad_r=r*(1+err_r/100);
     double Rc=(W/2)*(rad_l+rad_r)/(rad_r-rad_l);
-    double angle_drift=L/Rc*180/PI;
+    double rad_drift=L/Rc;
+    double angle_drift=rad_drift*180/PI;
+    double d_drift=Rc*(1-cos(rad_drift));
 
     printf("좌/우 바퀴 반경 : %lf m / %lf m\n",rad_l,rad_r);
     printf("곡률반경 : %lf m\n",Rc);
     printf("편류각 : %lf deg\n",angle_drift);
+    printf("편류거리 = %lf m\n",d_drift);
+    line();
 }
